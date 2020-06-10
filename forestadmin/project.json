@@ -1,9 +1,9 @@
 {
   "project": {
-    "name": "tryber/sd-0x-block14-project-movie-card-library-crud",
+    "name": "tryber/sd-04-project-movie-card-library-crud",
     "description": "Projeto de Movie Cards CRUD",
     "enabled": true,
-    "deadline": "2020-05-18 17:10:00",
+    "deadline": "2020-06-22 17:10:00",
     "requirements": [
       {
         "description": "1 - Rotas: O componente App deve renderizar BrowserRouter",

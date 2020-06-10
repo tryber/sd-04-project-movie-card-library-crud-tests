@@ -1,9 +1,9 @@
 {
-  "1 - Route check": 0,
-  "2 - Movie list component": 0,
-  "3 - Movie card component": 0,
-  "4 - Movie details component": 0,
-  "5 - Edit movie component": 0,
-  "6 - New movie component": 0,
-  "Bonus - Delete Movie": 0
+  "1 - Route check": 1099,
+  "2 - Movie list component": 1000,
+  "3 - Movie card component": 1101,
+  "4 - Movie details component": 1102,
+  "5 - Edit movie component": 1103,
+  "6 - New movie component": 1104,
+  "Bonus - Delete Movie": 1105
 }
