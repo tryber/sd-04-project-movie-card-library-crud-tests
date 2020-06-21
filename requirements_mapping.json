@@ -1,9 +1,9 @@
 {
-  "1 - Route check": 1099,
-  "2 - Movie list component": 1100,
-  "3 - Movie card component": 1101,
-  "4 - Movie details component": 1102,
-  "5 - Edit movie component": 1103,
-  "6 - New movie component": 1104,
-  "Bonus - Delete Movie": 1105
+  "1 - Rotas: O componente App deve renderizar BrowserRouter": 1099,
+  "2 - Movie list: Ao ser montado, MovieList deve fazer uma requisição para buscar a lista de filmes a ser renderizada": 1100,
+  "3 - MovieCard: deve possuir um link para a página de detalhes de um filme": 1101,
+  "4 - MovieDetails: deve fazer uma requisição para buscar o filme que deverá ser renderizado": 1102,
+  "5 - EditMovie: deve realizar uma requisição para buscar o filme que será editado": 1103,
+  "6 - NewMovie: Na página inicial, deve haver um link para criar novos cartões.": 1104,
+  "Bônus: Adicione um link para deletar um cartão em MovieDetails": 1105
 }
