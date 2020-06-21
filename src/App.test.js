@@ -91,7 +91,7 @@ const renderPath = (path) => {
   return { ...resources }
 };
 
-describe('1 - Route check', () => {
+describe('1 - Rotas: O componente App deve renderizar BrowserRouter', () => {
   test('check root', async () => {
     const { unmount, getByTestId } = renderPath('/');
     await waitFor(() => movieAPI.getMovies());
@@ -126,7 +126,7 @@ describe('1 - Route check', () => {
   })
 });
 
-describe('2 - Movie list component', () => {
+describe('2 - Movie list: Ao ser montado, MovieList deve fazer uma requisição para buscar a lista de filmes a ser renderizada', () => {
   test('should have a loading screen', async() => {
     const { container, unmount, getByText } = renderPath('/');
     expect(getByText('Carregando...'));
@@ -141,7 +141,7 @@ describe('2 - Movie list component', () => {
   })
 });
 
-describe('3 - Movie card component', () => {
+describe('3 - MovieCard: deve possuir um link para a página de detalhes de um filme', () => {
   test('each card should have at least its movies title and synopsis', async () => {
     const { unmount, getAllByText } = renderPath('/');
     await waitFor(() => movieAPI.getMovies());
@@ -162,7 +162,7 @@ describe('3 - Movie card component', () => {
   })
 })
 
-describe('4 - Movie details component', () => {
+describe('4 - MovieDetails: deve fazer uma requisição para buscar o filme que deverá ser renderizado', () => {
 
   it('each movie details page should have a loading screen', () => {
     readMovies().forEach(async (movie) => {
@@ -209,7 +209,7 @@ describe('4 - Movie details component', () => {
   });
 });
 
-describe('5 - Edit movie component', () => {
+describe('5 - EditMovie: deve realizar uma requisição para buscar o filme que será editado', () => {
 
   it('each edit movie page should have a loading screen', async () => {
     for(const movie of readMovies()) {
@@ -275,7 +275,7 @@ describe('5 - Edit movie component', () => {
  
 })
 
-describe('6 - New movie component', () => {
+describe('6 - NewMovie: Na página inicial, deve haver um link para criar novos cartões.', () => {
   it('should exist a new movie link @ home', async () => {
     const { unmount } = renderPath('/');
     await waitFor(() => movieAPI.getMovies());
@@ -316,7 +316,7 @@ describe('6 - New movie component', () => {
   })
 })
 
-describe('Bonus - Delete Movie', () => {
+describe('Bônus: Adicione um link para deletar um cartão em MovieDetails', () => {
   it('movie details should have delete button', async () => {
     for(const movie of readMovies()) {
       const { container, unmount, findByText } = renderPath('/movies/' + movie.id);
